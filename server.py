@@ -6,6 +6,10 @@ app = Flask(__name__)
 def play():
     return render_template('index.html')
 
+@app.route('/play/<int:boxes>')
+def playnum(boxes):
+    return render_template('playground2.html',boxes = boxes)
 
-if __name__=="__main__":  
+
+if __name__=="__main__":   
     app.run(debug=True) 
