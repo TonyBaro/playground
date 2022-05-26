@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground 3</title>
+</head>
+<body>
+    <div class="view" style="display:flex; align-items: center; width: 100%;">
+        <div class="page" style="display:flex;flex-direction:column; width: 100%; align-items: center;">
+            <div class="header">
+                <h1 style="font-size: 100px;">Welcome!</h1>
+            </div>
+            <div class="body" style="display:flex ;width: 100%;justify-content: center; flex-wrap: wrap;">
+                {%for x in range(boxes):%}
+                <div class="box" style="border: 3px solid black; width: 25%; height: 300px; margin: 10px; background-color:{{color}};"></div>   
+                {%endfor%}
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

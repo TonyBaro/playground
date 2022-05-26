@@ -10,6 +10,10 @@ def play():
 def playnum(boxes):
     return render_template('playground2.html',boxes = boxes)
 
+@app.route('/play/<int:boxes>/<string:color>')
+def playnumcolor(boxes,color):
+    return render_template('playground3.html',boxes = boxes, color = color)
+
 
 if __name__=="__main__":   
     app.run(debug=True) 
